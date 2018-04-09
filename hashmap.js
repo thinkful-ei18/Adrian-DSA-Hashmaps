@@ -46,7 +46,7 @@ class HashMap {
     for (let i=start; i<start + this._capacity; i++) {
       const index = i % this._capacity;
       const slot = this._slots[index];
-      if (slot === undefined || slot.key == key) {
+      if (slot === undefined || slot.key === key) {
         return index;
       }
     }
