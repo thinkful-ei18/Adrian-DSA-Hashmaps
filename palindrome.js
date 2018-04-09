@@ -18,7 +18,6 @@ function main () {
     const hash = new Hashmap();
     let count = 0;
 
-
     for (let i = 0; i < chars.length; i++) {
       hash.set(chars[i], 0);
     }
@@ -33,10 +32,9 @@ function main () {
       }
     }
 
-    console.log(hash);
-    console.log(count < 2);
+    return count < 2;
   }
-  palindrome('racecar');
+  console.log(palindrome('racecar'));
 }
 
 main();
