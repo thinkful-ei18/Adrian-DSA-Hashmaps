@@ -1,10 +1,9 @@
 'use strict';
 const Hashmap = require('./hashmap');
 
-
-const main = (function () {
+function main () {
   const lor = new Hashmap();
-
+  // Create a Hash map called lor and add the following items to it.
   lor.set('Hobbit', 'Bilbo');
   lor.set('Hobbit', 'Frodo');
   lor.set('Gandalf', 'Wizard');
@@ -15,7 +14,8 @@ const main = (function () {
   lor.set('Lady of Light', 'Galadriel');
   lor.set('HalfElven', 'Arwen');
   lor.set('Ent', 'Treebeard');
+  // Retrieve the value that is hashed in the key Maiar
+  console.log(lor.get('Maiar'));
+}
 
-
-
-});
+main();
