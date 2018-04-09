@@ -7,10 +7,17 @@ function main () {
 
   function groupAnagrams(array) {
     const anagrams = new Hashmap();
+    let sortedWord;
+    let matches = [];
 
     for (let i = 0; i < array.length; i++) {
-      console.log
+      sortedWord = array[i].split('').sort().join('');
+      anagrams.set(sortedWord, []);
     }
+
+    // find the matches
+    // push words into hashmap and array
+
   }
 
   groupAnagrams(['east', 'cars', 'acre', 'arcs', 'teas', 'eats', 'race']);
